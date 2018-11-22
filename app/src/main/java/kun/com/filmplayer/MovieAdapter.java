@@ -40,9 +40,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         holder.mItem = mValues.get(position);
 
-        holder.mName.setText(mValues.get(position).id);
-        holder.mName.setText(mValues.get(position).id);
-        ImageLoader.getInstance().displayImage(mValues.get(position).getImgUrl(), holder.mImg);
+        holder.mName.setText(mValues.get(position).getMovieName());
+        holder.mLen.setText(mValues.get(position).getMovieLength());
+        holder.mRibbon.setText(mValues.get(position).getMovieRibbon());
+        ImageLoader.getInstance().displayImage(mValues.get(position).getMovieThumb(), holder.mImg);
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +66,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         public final ImageView mImg;
         public final TextView mName;
         public final TextView mLen;
+        public final TextView mRibbon;
         public MovieInfo mItem;
 
         public ViewHolder(View view) {
@@ -73,6 +75,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             mImg = view.findViewById(R.id.mImg);
             mName = view.findViewById(R.id.mName);
             mLen = view.findViewById(R.id.mlen);
+            mRibbon = view.findViewById(R.id.mRibbon);
         }
 
         @Override

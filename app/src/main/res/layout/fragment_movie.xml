@@ -12,8 +12,9 @@
 
         <ImageView
             android:id="@+id/mImg"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
             android:src="@mipmap/ic_launcher" />
     </LinearLayout>
 
@@ -31,6 +32,12 @@
 
         <TextView
             android:id="@+id/mlen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/mRibbon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_name" />

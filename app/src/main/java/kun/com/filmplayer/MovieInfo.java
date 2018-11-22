@@ -1,53 +1,50 @@
 package kun.com.filmplayer;
 
 public class MovieInfo {
-    String id;
+    private String MovieName;
+    private String MovieUrl;
+    private String MovieThumb;
+    private String MovieRibbon;
 
-    public String getId() {
-        return id;
+    public String getMovieLength() {
+        return MovieLength;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setMovieLength(String movieLength) {
+        MovieLength = movieLength;
     }
 
-    public String getContent() {
-        return content;
+    private String MovieLength;
+
+    public String getMovieName() {
+        return MovieName;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setMovieName(String movieName) {
+        MovieName = movieName;
     }
 
-    public String getDetails() {
-        return details;
+    public String getMovieUrl() {
+        return MovieUrl;
     }
 
-    public void setDetails(String details) {
-        this.details = details;
+    public void setMovieUrl(String movieUrl) {
+        MovieUrl = movieUrl;
     }
 
-    String content;
-    String details;
-
-    public String getImgUrl() {
-        return imgUrl;
+    public String getMovieThumb() {
+        return MovieThumb;
     }
 
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
+    public void setMovieThumb(String movieThumb) {
+        MovieThumb = movieThumb;
     }
 
-    String imgUrl;
-
-    public MovieInfo(String id, String content, String details) {
-        this.id = id;
-        this.content = content;
-        this.details = details;
+    public String getMovieRibbon() {
+        return MovieRibbon;
     }
 
-    @Override
-    public String toString() {
-        return content;
+    public void setMovieRibbon(String movieRibbon) {
+        MovieRibbon = movieRibbon;
     }
 }

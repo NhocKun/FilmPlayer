@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         setupImageLoader();
+        switchContent(MovieFragment.newInstance(MovieFragment.MovieType.Home));
     }
 
     @Override
@@ -81,15 +82,20 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            switchContent(MovieFragment.newInstance(MovieFragment.MovieType.Home));
         } else if (id == R.id.nav_Category) {
 
         } else if (id == R.id.nav_movie) {
+            switchContent(MovieFragment.newInstance(MovieFragment.MovieType.Movie));
 
         } else if (id == R.id.nav_series_movie) {
+            switchContent(MovieFragment.newInstance(MovieFragment.MovieType.SeriesMovie));
 
         } else if (id == R.id.nav_present) {
+            switchContent(MovieFragment.newInstance(MovieFragment.MovieType.Presents));
 
         } else if (id == R.id.nav_theater) {
+            switchContent(MovieFragment.newInstance(MovieFragment.MovieType.Theater));
 
         }
 

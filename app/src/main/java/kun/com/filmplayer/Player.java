@@ -64,7 +64,7 @@ public class Player extends AppCompatActivity implements BetterVideoCallback {
     @Override
     public void onToggleControls(BetterVideoPlayer player, boolean isShowing) {
 
-        
+
     }
 
     @Override
